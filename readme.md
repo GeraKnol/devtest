@@ -5,7 +5,7 @@
 ## Introduction
 
 We are interested to see your programming skills. We would like you
-to take this simple PHP 5 test, so we can see how to solve problems.
+to take this PHP 5 test, so we can see how to solve problems.
 
 ## Guidelines
 
