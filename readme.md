@@ -9,8 +9,8 @@ to take this simple PHP 5 test, so we can see how to solve problems.
 
 ## Guidelines
 
-* Supply an object orientated solution
-* Write your most beautiful code
+* **Supply an object orientated solution**
+* **Write your most beautiful code**
 * You are allowed to add files as you wish
 * Since this is a backend test, you are allowed to use var_dump to output the response
 * Don't forget to define docblock comments
