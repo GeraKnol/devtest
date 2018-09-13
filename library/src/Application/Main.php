@@ -2,19 +2,22 @@
 
 namespace Application;
 
+use Service\Car as CarService;
+
 class Main 
 {
     /**
      * @var array
      */
 	protected $data;
-
+	
     /**
      * @param array $data
      */
 	public function __construct(array $data)
 	{
-		$this->setData($data);
+	    $this->setData($data);
+	    $this->carService = new CarService;
 	}
 
     /**
@@ -26,12 +29,14 @@ class Main
 	}
 
     /**
-     * Your implementation
-     *
-     * @todo create your implementation
+     * echo filtered car models.
      */
-	public function myFunction()
+	public function showFilteredCarModels()
 	{
-		//... remove this function
+	    $models = $this->carService->loopThroughCarBrands($this->data['cars']['brands']);
+	    foreach($models as $_m) {
+	        echo $_m."<br/>\r\n";
+	    };
 	}
+	
 }
